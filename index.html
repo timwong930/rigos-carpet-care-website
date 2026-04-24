@@ -40,9 +40,31 @@
           linear-gradient(180deg, #050c0f 0%, #071114 42%, #09161a 100%);
       }
 
-      a { color: inherit; text-decoration: none; }
-      img { max-width: 100%; display: block; }
-      .wrap { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .wrap { width: min(1180px, calc(100% - 32px)); margin: 0 auto; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .sr-only:focus,
+    .sr-only:focus-visible {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      overflow: visible;
+      clip: auto;
+      white-space: normal;
+    }
 
       .topbar {
         position: sticky;
@@ -531,6 +553,7 @@
 
     <footer>
       Built from public business information for a local website starter draft.
+      <a class="sr-only" href="AI-CONTEXT.md">AI context file</a>
     </footer>
   </body>
 </html>
