@@ -13,15 +13,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
     <style>
       :root {
-        --bg: #071114;
-        --bg-2: #0c171b;
-        --panel: rgba(11, 23, 27, 0.88);
-        --panel-2: rgba(15, 30, 35, 0.95);
-        --text: #edf7f2;
-        --muted: #9bb0a7;
-        --accent: #38d39f;
-        --accent-2: #8be9c8;
-        --line: rgba(136, 186, 172, 0.18);
+        --bg: #0b0b0d;
+        --bg-2: #141418;
+        --panel: rgba(18, 18, 22, 0.9);
+        --panel-2: rgba(24, 24, 30, 0.96);
+        --text: #f4f4f5;
+        --muted: #b6b6bc;
+        --accent: #b10000;
+        --accent-2: #ffb0b0;
+        --line: rgba(255, 115, 115, 0.2);
         --shadow: 0 24px 80px rgba(0, 0, 0, 0.36);
         --radius-xl: 28px;
         --radius-lg: 20px;
@@ -35,9 +35,9 @@
         font-family: Inter, system-ui, sans-serif;
         color: var(--text);
         background:
-          radial-gradient(circle at top left, rgba(56, 211, 159, 0.15), transparent 26%),
-          radial-gradient(circle at top right, rgba(139, 233, 200, 0.11), transparent 22%),
-          linear-gradient(180deg, #050c0f 0%, #071114 42%, #09161a 100%);
+          radial-gradient(circle at top left, rgba(177, 0, 0, 0.18), transparent 28%),
+          radial-gradient(circle at top right, rgba(255, 176, 176, 0.12), transparent 24%),
+          linear-gradient(180deg, #08080a 0%, #0b0b0d 42%, #121216 100%);
       }
 
     a { color: inherit; text-decoration: none; }
@@ -91,7 +91,7 @@
         height: 52px;
         border-radius: 16px;
         object-fit: cover;
-        border: 1px solid rgba(139, 233, 200, 0.28);
+        border: 1px solid rgba(255, 176, 176, 0.34);
         background: rgba(255,255,255,0.04);
       }
       .brand strong {
@@ -133,7 +133,7 @@
       .review,
       .cta-panel {
         border: 1px solid var(--line);
-        background: linear-gradient(180deg, rgba(12, 23, 27, 0.94), rgba(9, 18, 21, 0.9));
+        background: linear-gradient(180deg, rgba(20, 20, 26, 0.95), rgba(14, 14, 18, 0.92));
         box-shadow: var(--shadow);
       }
       .hero-copy {
@@ -148,7 +148,7 @@
         inset: auto -40px -40px auto;
         width: 240px;
         height: 240px;
-        background: radial-gradient(circle, rgba(56, 211, 159, 0.18), transparent 65%);
+        background: radial-gradient(circle, rgba(177, 0, 0, 0.22), transparent 65%);
         pointer-events: none;
       }
       .eyebrow {
@@ -157,9 +157,9 @@
         gap: 8px;
         padding: 10px 14px;
         border-radius: 999px;
-        background: rgba(56, 211, 159, 0.1);
+        background: rgba(177, 0, 0, 0.16);
         color: var(--accent-2);
-        border: 1px solid rgba(56, 211, 159, 0.2);
+        border: 1px solid rgba(255, 176, 176, 0.3);
         font-family: "IBM Plex Mono", monospace;
         font-size: 0.8rem;
         letter-spacing: 0.08em;
@@ -197,11 +197,11 @@
       }
       .btn:hover { transform: translateY(-1px); }
       .btn-primary {
-        background: linear-gradient(135deg, var(--accent), #1fbf86);
-        color: #06120f;
+        background: linear-gradient(135deg, var(--accent), #d31717);
+        color: #fff;
       }
       .btn-secondary {
-        border-color: rgba(139, 233, 200, 0.18);
+        border-color: rgba(255, 176, 176, 0.28);
         background: rgba(255,255,255,0.03);
       }
       .hero-points {
@@ -227,11 +227,11 @@
       }
       .hero-card img {
         width: 100%;
-        height: clamp(250px, 34vw, 360px);
-        min-height: 250px;
-        object-fit: contain;
+        height: clamp(260px, 34vw, 380px);
+        min-height: 260px;
+        object-fit: cover;
         object-position: center;
-        background: #0a1317;
+        background: #0a0a0d;
       }
       .hero-card-footer {
         padding: 18px 20px 20px;
@@ -326,8 +326,9 @@
       .mini-gallery img {
         border-radius: 18px;
         width: 100%;
-        aspect-ratio: 1 / 1;
+        aspect-ratio: 4 / 3;
         object-fit: cover;
+        object-position: center;
         border: 1px solid rgba(255,255,255,0.08);
       }
 
@@ -428,7 +429,7 @@
         </section>
 
         <aside class="hero-card" aria-label="Featured service image">
-          <img src="https://static.wixstatic.com/media/f4413e_486bc166462d46b589cedd4ff165cb3b~mv2.jpg/v1/fill/w_998,h_397,al_c,q_85,enc_avif,quality_auto/f4413e_486bc166462d46b589cedd4ff165cb3b~mv2.jpg" alt="Professional carpet cleaning work in progress" />
+          <img src="https://static.wixstatic.com/media/f4413e_68c422c7db5342ada7aba7df965fc90e~mv2_d_2448_3264_s_4_2.jpg/v1/fill/w_980,h_700,al_c,q_85,enc_avif,quality_auto/f4413e_68c422c7db5342ada7aba7df965fc90e~mv2_d_2448_3264_s_4_2.jpg" alt="Professional carpet and floor cleaning service in progress" />
           <div class="hero-card-footer">
             <div>
               <strong>24/7 water extraction</strong>
@@ -525,9 +526,9 @@
         </p>
       </div>
       <div class="mini-gallery">
-        <img src="https://static.wixstatic.com/media/f4413e_d0d367881d5c4e93a3a575764fef4d10~mv2.jpg/v1/fill/w_321,h_407,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f4413e_d0d367881d5c4e93a3a575764fef4d10~mv2.jpg" alt="Carpet care service photo" />
-        <img src="https://static.wixstatic.com/media/f4413e_dd82afc61c5447e6b981358e97ba32ca~mv2.jpg/v1/fill/w_407,h_407,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/f4413e_dd82afc61c5447e6b981358e97ba32ca~mv2.jpg" alt="Carpet cleaning detail photo" />
-        <img src="https://static.wixstatic.com/media/f4413e_486bc166462d46b589cedd4ff165cb3b~mv2.jpg/v1/fill/w_998,h_397,al_c,q_85,enc_avif,quality_auto/f4413e_486bc166462d46b589cedd4ff165cb3b~mv2.jpg" alt="Cleaning team and equipment" />
+        <img src="https://static.wixstatic.com/media/f4413e_68c422c7db5342ada7aba7df965fc90e~mv2_d_2448_3264_s_4_2.jpg/v1/fill/w_700,h_525,al_c,q_82,enc_avif,quality_auto/f4413e_68c422c7db5342ada7aba7df965fc90e~mv2_d_2448_3264_s_4_2.jpg" alt="Carpet and upholstery cleaning results" />
+        <img src="https://static.wixstatic.com/media/f4413e_98c13bd5eb034f0cae06a662524b262d~mv2_d_2448_3264_s_4_2.jpg/v1/fill/w_700,h_525,al_c,q_82,enc_avif,quality_auto/f4413e_98c13bd5eb034f0cae06a662524b262d~mv2_d_2448_3264_s_4_2.jpg" alt="Residential floor care project" />
+        <img src="https://static.wixstatic.com/media/f4413e_ce3b12573f8646c180d8b7e2f019533e~mv2_d_2448_3264_s_4_2.jpg/v1/fill/w_700,h_525,al_c,q_82,enc_avif,quality_auto/f4413e_ce3b12573f8646c180d8b7e2f019533e~mv2_d_2448_3264_s_4_2.jpg" alt="Detail-focused carpet cleaning work" />
       </div>
     </section>
 
